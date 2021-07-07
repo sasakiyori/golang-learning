@@ -1,6 +1,21 @@
 package main
 import "fmt"
 
+func AppendTest(s []int) []int {
+	if (len(s) > 0) {
+		s[0] = 0
+	}
+	s = append(s, 1)
+	return s
+}
+
+func AppendPtrTest(s *[] int) {
+	if (len(*s) > 0) {
+		(*s)[0] = 9
+	}
+	*s = append(*s, 1)
+}
+
 // test for slice: a structure or an action
 func main() {  
 	// slice structure
@@ -57,4 +72,18 @@ func main() {
 	fmt.Printf("after copy, slice_a: %s, slice_b: %s\n", slice_a, slice_b)
 	slice_b[1] = "change"
 	fmt.Printf("after change, slice_a: %s, slice_b: %s\n", slice_a, slice_b)
+
+
+	// func test:  value / pointer parameter
+	original := []int{1111, 1111, 1111}
+	fmt.Println(original)
+	// original = [0 1111 1111]  value_slice = [0 1111 1111 1]
+	// for original slice: value change succ, append failed
+	value_slice := AppendTest(original)
+	fmt.Println(original, value_slice)
+
+	// original = [9 1111 1111 1]
+	// for original slice: value change succ, append succ
+	AppendPtrTest(&original)
+	fmt.Println(original)
 }
