@@ -3,3 +3,4 @@
 3. [go-questions](https://golang.design/go-questions/)
 4. [effective-go-zh](https://www.kancloud.cn/kancloud/effective/72199)
 5. [uber-go-style](https://github.com/gocn/translator/blob/master/2019/w38_uber_go_style_guide.md)
+6. [escape-from-escape-analysis-of-golang](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/ICSE20.pdf)
