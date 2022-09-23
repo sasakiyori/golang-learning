@@ -40,3 +40,8 @@
 
 ## Context
 1. [what is context](https://zhuanlan.zhihu.com/p/110085652)
+
+## Performance Affected By Swith-Case
+1. [Code behaviour depends on type order in switch operator](https://stackoverflow.com/questions/43136897/code-behaviour-depends-on-type-order-in-switch-operator-how-to-get-rid-of-this)
+2. [Does Go optimize switch?](https://groups.google.com/g/golang-nuts/c/IURR4Z2SY7M/m/R7ORD_yDix4J)
+3. [Does the order of cases in a switch statement affect performance(C language)](https://stackoverflow.com/questions/47089878/does-the-order-of-cases-in-a-switch-statement-affect-performance)
